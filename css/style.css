@@ -1,0 +1,26 @@
+*{
+    margin: 0px;
+}
+
+body{
+    margin: 0px;
+    background-image: url(/img/homepage_background.jpg);
+    background-size: 1800px;
+    background-position: center;
+    margin: 0px;
+    display: flex;
+}
+
+header{
+    background-color: red;
+    margin-top: 30px;
+
+}
+
+#restaurang_logga_stor{
+    height: 300px;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+
+}
