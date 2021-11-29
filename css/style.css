@@ -1,5 +1,6 @@
 *{
     margin: 0px;
+    padding: 0px;
 }
 
 body, html{
@@ -32,7 +33,7 @@ footer{
     background-color: rgb(0, 0, 0, 0.5);
     width: 80vw;
     height: 8vh;
-    border-radius: 20px;
+    border-radius: 5vh;
     margin-bottom: 2vh;
 }
 
@@ -41,17 +42,19 @@ header{
     margin-top: 2vh;
     width: 80vw;
     height: 8vh;
-    border-radius: 20px;
+    border-radius: 5vh;
     display: flex;
     justify-content:space-between;
     align-items: center;
 
 }
+
 #restaurang_logga_liten{
     height: 10vh;
     width: auto;
     margin-left: 5vw;
 }
+
 #link_list{
     width: 40vw;
     display: flex;
@@ -60,6 +63,7 @@ header{
     flex-direction: row;
     list-style: none;
 }
+
 .meny_länk{
     text-decoration: none;
     color: rgb(200, 200, 200);
@@ -68,6 +72,35 @@ header{
     font-weight: bold;
 
 }
+
 .meny_länk:hover    {
+    color: rgb(255, 255, 255);
+    font-size: 30.5px;
+    }
+
+#kontaktuppgifter{
+    width: 80vw;
+    margin-top: 2vh;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    list-style: none;  
+}
+
+.kontakt{
+    text-decoration: none;
+    color: rgb(180, 180, 180);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    font-weight:normal;      
+    }
+#mail{
+    color: rgb(180, 180, 180);
+    text-decoration: none;
+}
+
+#mail:hover    {
     color: rgb(255, 255, 255);
     }
