@@ -2,14 +2,12 @@
     margin: 0px;
     padding: 0px;
 }
-
 body, html   {
     padding: 0px;
     height: 100%;
     width: 100%;
     margin: 0px;
 }
-
 #container  {
  
     background-image: url(../img/homepage_background.jpg);
@@ -23,7 +21,6 @@ body, html   {
     align-items:center;
     justify-content:space-between;
 }
-
 #restaurang_logga_stor  {
     height: 60vh;
     width: auto;
@@ -36,7 +33,6 @@ footer  {
     border-radius: 5vh;
     margin-bottom: 2vh;
 }
-
 header  {
     background-color: rgb(0, 0, 0, 0.5);
     margin-top: 2vh;
@@ -48,13 +44,11 @@ header  {
     align-items: center;
 
 }
-
 #restaurang_logga_liten    {
     height: 55px;
     width: auto;
     margin-left: 5vw;
 }
-
 #link_list  {
     width: 40vw;
     display: flex;
@@ -63,24 +57,21 @@ header  {
     flex-direction: row;
     list-style: none;
 }
-
 .meny_länk  {
     text-decoration: none;
     color: rgb(200, 200, 200);
     font-family: 'Courier New', Courier, monospace;
-    font-size: 5.3vh;
+    font-size: 30px;
     font-weight: bold;
 
 }
-
 .meny_länk:hover    {
     color: rgb(255, 255, 255);
-    font-size: 5.4vh;
+    font-size: 30.5px;
     }
-
 #kontaktuppgifter   {
     width: 80vw;
-    margin-top: 2vh;
+    margin-top: 15px;
     height: auto;
     display: flex;
     justify-content: space-evenly;
@@ -88,7 +79,6 @@ header  {
     flex-direction: row;
     list-style: none;  
 }
-
 .kontakt    {
     text-decoration: none;
     color: rgb(180, 180, 180);
@@ -100,50 +90,134 @@ header  {
     color: rgb(180, 180, 180);
     text-decoration: none;
 }
-
 #mail:hover {
     color: rgb(255, 255, 255);
     }
-
 #menu   {
-    background-color: rgb(240, 240, 240);
+    background-color: rgb(0, 0, 0, 0.4);
     margin: 0px;
     padding: 0px;
     height: 70vh;
     width: 75vw;
-    border-radius: 2vh;
+    border-radius: 10px;
     display:grid ;
     grid-template-areas:
-    "ka kt"
-    "ft fr"
-    "ch ct"    ;
+    "kf ka"
+    "fa fr"
+    "ch ca"    ;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, minmax(100px, 1fr));
+}
+#kaffebild_och_titel{
+grid-area: kf;
+display: flex;
+align-items: center;
+justify-content:space-evenly;
+flex-direction: row;
+}
+#fruktbild_och_titel{
+grid-area: fr;
+display: flex;
+align-items: center;
+justify-content:space-evenly;
+flex-direction: row;
+}
+#chokladbild_och_titel{
+grid-area: ch;
+display: flex;
+align-items: center;
+justify-content:space-evenly;
+flex-direction: row;
 }
 #kaffe{
-    grid-area: ka;
-    height: 130px;
+    height: 100%;
     width: auto;
+    border-radius: 10px;
 }
 #frukt{
-    grid-area: fr;
-    height: 130px;
+    height: 100%;
     width: auto;
-    margin-right: 0px;
+    border-radius: 10px;
 }
 #choklad{
-    grid-area: ch;
-    height: 130px;
+    height: 100%;
     width: auto;
+    border-radius: 10px;
 }
 #kaffe_text{
-    background-color: royalblue;
-    grid-area: kt;
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: ka;
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0, 0.2);
 }
 #frukt_text{
-    background-color: salmon;
-    grid-area: ft;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: fa;
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0, 0.2);
 }
 #choklad_text{
-    background-color: springgreen;
-    grid-area: ct;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: ca;
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0, 0.2);
+}
+.meny_text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    font-size: 15px;
+    font-style:oblique;
+    font-weight: lighter;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(220, 220, 220);
+}
+.meny_titel_items{
+    color: rgb(230, 230, 230);
+    font-size: 26px;
+    font-style: normal;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+#about_us{
+    background-color: rgb(0, 0, 0, 0.3);
+    border-radius: 10px;
+    width: 75vw;
+    height: 70vh;
+    display: grid;
+    grid-template-areas:
+    "im tx as"
+    "as as as"
+    ;
+    grid-template-columns: 1fr 2fr 100px;
+    grid-template-rows: 1fr 100px;
+    
+}
+#sociala_medier{
+    height: 50px;
+    width: auto;
+    grid-area: as;
+    margin: 2vh;
+}
+#personal_text{
+    margin: 2vh;
+}
+#arbetare{
+    height: 50vh;
+    border-radius: 10px;
+    margin: 2vh;
+}
+#personal_text{
+    color: rgb(230, 230, 230);
+    font-size: 22px;
+    font-style: normal;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
 }
